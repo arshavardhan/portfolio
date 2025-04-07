@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HarshaFlix</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo" onclick="scrollToTop()">HARSHA</div>
+    <nav class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#publications">Publications</a>
+      <a href="#techstack">Tech Stack</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#vision">Vision</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+<!-- Hero Section -->
+<section id="hero" class="hero" style="background-image: url('images/background.jpg.jpg');">
+  <div class="hero-overlay">
+    <div class="hero-content hero-right">
+      <div class="hero-image">
+        <img src="images/harshapick.jpg" alt="Harsha" />
+      </div>
+      <div class="hero-heading">
+        <h1>A Cybersecurity Enthusiast<br />Cloud Architect<br />Machine Learning Explorer</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Main Content Box -->
+  <div class="main-content-box">
+
+  <!-- About Me -->
+<section id="about" class="section about-section">
+  <h2>About Me</h2>
+  <div class="about-container">
+    <div class="profile-photo square">
+      <img src="images/harshapick.jpg" alt="Harsha Profile" />
+    </div>
+    <div class="about-text">
+      <p>Hello! I’m Harsha — a technology enthusiast with a strong focus on cloud computing, cybersecurity, and intelligent systems. My passion lies in building digital systems that are not only efficient but also secure by design.</p>
+      <p>I’m currently pursuing my degree in Computer Science, and over the past few years, I’ve immersed myself in areas like cloud architecture, machine learning, DevSecOps, and infrastructure automation. I believe that true innovation lies at the intersection of security, performance, and scalability.</p>
+      <p>🔐 <strong>Cybersecurity Focus:</strong> I enjoy diving deep into threat modeling, application hardening, and securing cloud-native applications. I'm particularly passionate about Identity and Access Management (IAM), encryption strategies, vulnerability detection, and zero-trust architectures.</p>
+      <p>☁️ <strong>Cloud Experience:</strong> I’ve worked on cloud platforms like AWS, Azure, and Google Cloud. My projects involve setting up CI/CD pipelines, deploying scalable microservices, and using tools like Docker, Kubernetes, and Terraform for infrastructure management.</p>
+      <p>🧠 <strong>AI & Automation:</strong> I’m intrigued by how machine learning and intelligent systems can drive smarter, faster decisions in both infrastructure and cybersecurity.</p>
+      <p>💡 <strong>Mindset:</strong> I approach challenges with curiosity and a hacker mindset — not to break systems, but to understand them thoroughly and fortify them better.</p>
+      <p><em>“Tech isn’t just about innovation — it’s about responsibility, trust, and creating something that lasts.”</em></p>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Skills -->
+    <section id="skills" class="section skills-section">
+      <h2>Skills</h2>
+      <div class="skill-boxes">
+        <div class="box">Python</div>
+        <div class="box">JavaScript</div>
+        <div class="box">AWS, Azure, GCP</div>
+        <div class="box">IAM & Encryption</div>
+        <div class="box">Machine Learning</div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>AWS Certified Solutions Architect</li>
+        <li>Azure Security Engineer Associate</li>
+      </ul>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="section">
+      <h2>Publications</h2>
+      <ul>
+        <li>Exploring AI-Driven Threat Detection – CyberSec Journal</li>
+        <li>Cloud-native Security Design – Medium</li>
+      </ul>
+    </section>
+
+    <!-- Tech Stack -->
+    <section id="techstack" class="section techstack-section">
+      <h2>Tech Stack</h2>
+      <div class="tech-boxes">
+        <div class="box">Python, JavaScript, Bash</div>
+        <div class="box">React, Node.js</div>
+        <div class="box">Docker, Kubernetes</div>
+        <div class="box">Terraform, GitHub Actions</div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="section">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Top 5 in National Cybersecurity Hackathon 2023</li>
+        <li>Delivered a talk on Cloud Security at TechSummit'24</li>
+      </ul>
+    </section>
+
+    <!-- Vision -->
+    <section id="vision" class="section">
+      <h2>Vision</h2>
+      <p>I aim to design secure, scalable systems that make meaningful impact through ethical technology.</p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card" onclick="openProjectModal('Malware Detection System')">
+          <img src="images/project1.jpg" alt="Project 1" />
+          <h3>Malware Detection System</h3>
+        </div>
+        <div class="project-card" onclick="openProjectModal('Job Role Matching using TF-IDF')">
+          <img src="images/project2.jpg" alt="Project 2" />
+          <h3>Job Role Matching using TF-IDF</h3>
+        </div>
+        <div class="project-card" onclick="openProjectModal('Cloud Cost Optimizer')">
+          <img src="images/project3.jpg" alt="Project 3" />
+          <h3>Cloud Cost Optimizer</h3>
+        </div>
+        <div class="project-card" onclick="openProjectModal('AI-based Vulnerability Scanner')">
+          <img src="images/project4.jpg" alt="Project 4" />
+          <h3>AI-based Vulnerability Scanner</h3>
+        </div>
+        <div class="project-card" onclick="openProjectModal('Container Security System')">
+          <img src="images/project5.jpg" alt="Project 5" />
+          <h3>Container Security System</h3>
+        </div>
+        <div class="project-card" onclick="openProjectModal('Phishing Detection using ML')">
+          <img src="images/project6.jpg" alt="Project 6" />
+          <h3>Phishing Detection using ML</h3>
+        </div>
+        <div class="project-card" onclick="openProjectModal('IAM Role Visualizer')">
+          <img src="images/project7.jpg" alt="Project 7" />
+          <h3>IAM Role Visualizer</h3>
+        </div>
+        <div class="project-card" onclick="openProjectModal('Secure Chat App')">
+          <img src="images/project8.jpg" alt="Project 8" />
+          <h3>Secure Chat App</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Floating Project Modal -->
+    <div id="projectModal" class="project-modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeProjectModal()">&times;</span>
+        <h2 id="modalProjectTitle"></h2>
+        <p>This is where more information about the selected project will appear.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Contact Footer -->
+  <footer id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:dumpaharsha2003@gmail.com">dumpaharsha2003@gmail.com</a></p>
+    <p>Phone: +91 7013446450</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/harsha-vardhan-862082233" target="_blank">View Profile</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/harsha__7132" target="_blank">@harsha__7132</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
