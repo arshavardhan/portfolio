@@ -16,32 +16,31 @@
       <a href="#skills">Skills</a>
       <a href="#certifications">Certifications</a>
       <a href="#publications">Publications</a>
-      <a href="#techstack">Tech Stack</a>
       <a href="#achievements">Achievements</a>
-      <a href="#vision">Vision</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-<!-- Hero Section -->
-<section id="hero" class="hero" style="background-image: url('images/background.jpg.jpg');">
-  <div class="hero-overlay">
-    <div class="hero-content hero-right">
-      <div class="hero-image">
-        <img src="images/harshapick.jpg" alt="Harsha" />
-      </div>
-      <div class="hero-heading">
-        <h1>A Cybersecurity Enthusiast<br />Cloud Architect<br />Machine Learning Explorer</h1>
+  <!-- Hero Section -->
+  <section id="hero" class="hero" style="background-image: url('images/background.jpg.jpg');">
+    <div class="hero-overlay">
+      <div class="hero-content hero-right">
+        <div class="hero-image">
+          <img src="images/harshapick.jpg" alt="Harsha" />
+        </div>
+        <div class="hero-heading">
+          <h1>A Cybersecurity Enthusiast<br />Cloud Architect<br />Machine Learning Explorer</h1>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- Main Content Box -->
+  <!-- Main Content Box (From About to Projects) -->
   <div class="main-content-box">
+    <div class="content-box">
 
-  <!-- About Me -->
+        <!-- About Me -->
 <section id="about" class="section about-section">
   <h2>About Me</h2>
   <div class="about-container">
@@ -60,113 +59,67 @@
   </div>
 </section>
 
-
-
-    <!-- Skills -->
-    <section id="skills" class="section skills-section">
-      <h2>Skills</h2>
-      <div class="skill-boxes">
-        <div class="box">Python</div>
-        <div class="box">JavaScript</div>
-        <div class="box">AWS, Azure, GCP</div>
-        <div class="box">IAM & Encryption</div>
-        <div class="box">Machine Learning</div>
-      </div>
-    </section>
-
-    <!-- Certifications -->
-    <section id="certifications" class="section">
-      <h2>Certifications</h2>
-      <ul>
-        <li>AWS Certified Solutions Architect</li>
-        <li>Azure Security Engineer Associate</li>
-      </ul>
-    </section>
-
-    <!-- Publications -->
-    <section id="publications" class="section">
-      <h2>Publications</h2>
-      <ul>
-        <li>Exploring AI-Driven Threat Detection – CyberSec Journal</li>
-        <li>Cloud-native Security Design – Medium</li>
-      </ul>
-    </section>
-
-    <!-- Tech Stack -->
-    <section id="techstack" class="section techstack-section">
-      <h2>Tech Stack</h2>
-      <div class="tech-boxes">
-        <div class="box">Python, JavaScript, Bash</div>
-        <div class="box">React, Node.js</div>
-        <div class="box">Docker, Kubernetes</div>
-        <div class="box">Terraform, GitHub Actions</div>
-      </div>
-    </section>
-
-    <!-- Achievements -->
-    <section id="achievements" class="section">
-      <h2>Achievements</h2>
-      <ul>
-        <li>Top 5 in National Cybersecurity Hackathon 2023</li>
-        <li>Delivered a talk on Cloud Security at TechSummit'24</li>
-      </ul>
-    </section>
-
-    <!-- Vision -->
-    <section id="vision" class="section">
-      <h2>Vision</h2>
-      <p>I aim to design secure, scalable systems that make meaningful impact through ethical technology.</p>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card" onclick="openProjectModal('Malware Detection System')">
-          <img src="images/project1.jpg" alt="Project 1" />
-          <h3>Malware Detection System</h3>
+      <!-- Skills -->
+      <section id="skills" class="section skills-section">
+        <h2>Skills</h2>
+        <div class="skill-boxes">
+          <div class="box">Python</div>
+          <div class="box">JavaScript</div>
+          <div class="box">AWS, Azure, GCP</div>
+          <div class="box">IAM & Encryption</div>
+          <div class="box">Machine Learning</div>
         </div>
-        <div class="project-card" onclick="openProjectModal('Job Role Matching using TF-IDF')">
-          <img src="images/project2.jpg" alt="Project 2" />
-          <h3>Job Role Matching using TF-IDF</h3>
-        </div>
-        <div class="project-card" onclick="openProjectModal('Cloud Cost Optimizer')">
-          <img src="images/project3.jpg" alt="Project 3" />
-          <h3>Cloud Cost Optimizer</h3>
-        </div>
-        <div class="project-card" onclick="openProjectModal('AI-based Vulnerability Scanner')">
-          <img src="images/project4.jpg" alt="Project 4" />
-          <h3>AI-based Vulnerability Scanner</h3>
-        </div>
-        <div class="project-card" onclick="openProjectModal('Container Security System')">
-          <img src="images/project5.jpg" alt="Project 5" />
-          <h3>Container Security System</h3>
-        </div>
-        <div class="project-card" onclick="openProjectModal('Phishing Detection using ML')">
-          <img src="images/project6.jpg" alt="Project 6" />
-          <h3>Phishing Detection using ML</h3>
-        </div>
-        <div class="project-card" onclick="openProjectModal('IAM Role Visualizer')">
-          <img src="images/project7.jpg" alt="Project 7" />
-          <h3>IAM Role Visualizer</h3>
-        </div>
-        <div class="project-card" onclick="openProjectModal('Secure Chat App')">
-          <img src="images/project8.jpg" alt="Project 8" />
-          <h3>Secure Chat App</h3>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Floating Project Modal -->
-    <div id="projectModal" class="project-modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeProjectModal()">&times;</span>
-        <h2 id="modalProjectTitle"></h2>
-        <p>This is where more information about the selected project will appear.</p>
-      </div>
-    </div>
+      <!-- Certifications -->
+      <section id="certifications" class="section">
+        <h2>Certifications</h2>
+        <ul>
+          <li>Certificate of participation in icciets - 2025</li>
+          <li>Certificate of complition of internship in aws at nielit</li>
+          <li>joy of computing in python in nptel</li>
+          <li>Certificate of complition of internship in  coders cave at coders cave</li>
+        </ul>
+      </section>
 
+      <!-- Publications -->
+      <section id="publications" class="section">
+        <h2>Publications</h2>
+        <ul>
+          <li>Detecting System Vulnerability to Malware Attacks Using ML Techniques : A Review </li>
+        </ul>
+      </section>
+
+      <!-- Achievements -->
+      <section id="achievements" class="section">
+        <h2>Achievements</h2>
+        <ul>
+          <li>Top 5 in college quiz compitation in a quiz event</li>
+          <li>distric level chess compiation participated </li>
+        </ul>
+      </section>
+<!-- Project Card -->
+<div class="project-card" onclick="openModal('malware-modal')">
+  <img src="images/malware_detection_thumb.png" alt="Malware Detection System">
+  <h3>Malware Detection System</h3>
+</div>
+
+<!-- Project Modal -->
+<div id="malware-modal" class="project-modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('malware-modal')">&times;</span>
+    <img src="images/malware_detection_full.png" alt="Malware Detection Full View" style="width: 100%; border-radius: 12px; margin-bottom: 1rem;">
+    <h2>Malware Detection System</h2>
+    <ul>
+      <li>Developed a machine learning system to detect vulnerabilities to cyber-attacks.</li>
+      <li>Trained models using historical network logs and attack data.</li>
+      <li>Classified potential threats in real-time using KNN and Random Forest.</li>
+      <li>Implemented IP log monitoring with anomaly detection techniques.</li>
+      <li>Deployed a dashboard showing attack alerts and system metrics.</li>
+    </ul>
+    <a href="https://github.com/yourprojectrepo" class="github-link" target="_blank">View on GitHub</a>
   </div>
+</div>
 
   <!-- Contact Footer -->
   <footer id="contact" class="section">
