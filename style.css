@@ -256,12 +256,11 @@ footer#contact a {
 footer#contact a:hover {
   text-decoration: underline;
 }
-/* Floating blob base style */
+/* Base blob style */
 .floating-blob {
   position: absolute;
   width: 120px;
   height: 120px;
-  background: radial-gradient(circle at 30% 30%, #7f5af0, #4b0082);
   border-radius: 50%;
   filter: blur(25px);
   opacity: 0.4;
@@ -271,49 +270,12 @@ footer#contact a:hover {
   pointer-events: none;
 }
 
-/* Hover scale effect */
 .floating-blob:hover {
   transform: scale(1.2);
   opacity: 0.6;
 }
 
-/* Per-section blob positions */
-.blob-about {
-  top: 10%;
-  left: 5%;
-}
-
-.blob-skills {
-  top: 20%;
-  right: 5%;
-}
-
-.blob-certifications {
-  bottom: 10%;
-  left: 15%;
-}
-
-.blob-publications {
-  top: 30%;
-  right: 10%;
-}
-
-.blob-achievements {
-  bottom: 15%;
-  right: 20%;
-}
-
-.blob-projects {
-  top: 25%;
-  left: 10%;
-}
-
-.blob-contact {
-  bottom: 10%;
-  left: 40%;
-}
-
-/* Floating animation */
+/* Animating float */
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
@@ -323,7 +285,26 @@ footer#contact a:hover {
   }
 }
 
-/* Make sure section containers are positioned relative */
+/* Section-specific blobs */
+.blob-certifications {
+  background: radial-gradient(circle, #00bcd4, #0097a7);
+  top: 15%;
+  left: 10%;
+}
+
+.blob-publications {
+  background: radial-gradient(circle, #ff9800, #f57c00);
+  top: 20%;
+  right: 15%;
+}
+
+.blob-achievements {
+  background: radial-gradient(circle, #8bc34a, #558b2f);
+  bottom: 15%;
+  left: 20%;
+}
+
+/* Ensure section containers can hold absolutely positioned blobs */
 .section {
   position: relative;
   z-index: 1;
